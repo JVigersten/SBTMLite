@@ -51,6 +51,8 @@
             this.SaveButton = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LoadButton = new System.Windows.Forms.Button();
+            this.DevLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +61,7 @@
             this.Counter.AutoSize = true;
             this.Counter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Counter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(156)))), ((int)(((byte)(152)))));
-            this.Counter.Location = new System.Drawing.Point(80, 347);
+            this.Counter.Location = new System.Drawing.Point(80, 349);
             this.Counter.Name = "Counter";
             this.Counter.Size = new System.Drawing.Size(57, 13);
             this.Counter.TabIndex = 0;
@@ -104,7 +106,7 @@
             this.Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
-            this.Reset.Location = new System.Drawing.Point(91, 543);
+            this.Reset.Location = new System.Drawing.Point(53, 540);
             this.Reset.Name = "Reset";
             this.Reset.Size = new System.Drawing.Size(109, 20);
             this.Reset.TabIndex = 10;
@@ -181,6 +183,9 @@
             // 
             // NotesInput
             // 
+            this.NotesInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NotesInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
             this.NotesInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NotesInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(215)))), ((int)(((byte)(189)))));
@@ -195,6 +200,8 @@
             // BugsInput
             // 
             this.BugsInput.AcceptsTab = true;
+            this.BugsInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BugsInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
             this.BugsInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.BugsInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(215)))), ((int)(((byte)(189)))));
@@ -207,6 +214,9 @@
             // 
             // NotesLabel
             // 
+            this.NotesLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NotesLabel.AutoSize = true;
             this.NotesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NotesLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(156)))), ((int)(((byte)(152)))));
@@ -218,6 +228,8 @@
             // 
             // BugsLabel
             // 
+            this.BugsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BugsLabel.AutoSize = true;
             this.BugsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BugsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(156)))), ((int)(((byte)(152)))));
@@ -266,7 +278,7 @@
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
-            this.SaveButton.Location = new System.Drawing.Point(36, 543);
+            this.SaveButton.Location = new System.Drawing.Point(56, 498);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(47, 23);
             this.SaveButton.TabIndex = 9;
@@ -278,7 +290,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(73, 375);
+            this.pictureBox1.Location = new System.Drawing.Point(73, 374);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -286,12 +298,39 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
+            // LoadButton
+            // 
+            this.LoadButton.FlatAppearance.BorderSize = 0;
+            this.LoadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoadButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
+            this.LoadButton.Location = new System.Drawing.Point(109, 498);
+            this.LoadButton.Name = "LoadButton";
+            this.LoadButton.Size = new System.Drawing.Size(53, 23);
+            this.LoadButton.TabIndex = 19;
+            this.LoadButton.Text = "LOAD";
+            this.LoadButton.UseVisualStyleBackColor = true;
+            this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
+            // 
+            // DevLabel
+            // 
+            this.DevLabel.AutoSize = true;
+            this.DevLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DevLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
+            this.DevLabel.Location = new System.Drawing.Point(128, -17);
+            this.DevLabel.Name = "DevLabel";
+            this.DevLabel.Size = new System.Drawing.Size(61, 9);
+            this.DevLabel.TabIndex = 20;
+            this.DevLabel.Text = "A Nethouse Tool";
+            // 
             // SBTMLite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(57)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(578, 639);
+            this.ClientSize = new System.Drawing.Size(582, 639);
+            this.Controls.Add(this.DevLabel);
+            this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.SBTMLabel);
@@ -312,6 +351,7 @@
             this.Controls.Add(this.Start);
             this.Controls.Add(this.Counter);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(598, 659);
             this.Name = "SBTMLite";
             this.Text = "SBTM Lite";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -343,6 +383,8 @@
         public System.Windows.Forms.Label Counter;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button LoadButton;
+        private System.Windows.Forms.Label DevLabel;
     }
 }
 
