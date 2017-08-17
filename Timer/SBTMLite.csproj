@@ -49,6 +49,9 @@
   <PropertyGroup>
     <StartupObject>SBTMLite.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Iconshock-Real-Vista-Education-Laboratory.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -111,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon1.ico" />
+    <Content Include="Iconshock-Real-Vista-Education-Laboratory.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
